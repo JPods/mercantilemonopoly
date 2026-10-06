@@ -76,3 +76,8 @@ footer .links a { margin: 0 10px; }
   .quote-block { padding: 18px 18px; }
   .states td:first-child { white-space: normal; }
 }
+
+/* ── Figures ── */
+figure { margin: 24px 0; }
+figure img { width: 100%; height: auto; display: block; border-radius: 8px; }
+figure figcaption { font-size: 0.85em; color: #78716c; margin-top: 8px; }
