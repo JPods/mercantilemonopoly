@@ -17,7 +17,7 @@ momentum, a loss of Disposable Energy shows up in jobs only after a delay.
 | Disposable Energy per person (1986 = 0) | **+0.66 in Jan 2026 → +0.06 in May → +0.18 in Aug** | FRED `A229RC0`, `GASREGW` |
 | Unemployment (Sep 2026) | 4.2% | BLS via FRED `UNRATE` |
 
-The diesel record is in today's dollars. Adjusted for inflation, it roughly matches the June 2022
+The diesel record is in nominal dollars. Adjusted for inflation, it roughly matches the June 2022
 peak ($6.52 in today's dollars) and is below June 2008 ($7.19). The *speed* of the change is what
 matters most for what comes next: Disposable Energy per person lost 0.60 in four months — the
 fastest four-month drop since monthly data begin in 1990. The next largest (2020–21) were swings
