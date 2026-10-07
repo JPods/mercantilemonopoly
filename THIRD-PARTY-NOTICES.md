@@ -12,7 +12,7 @@
 
 | Source | Series | Terms |
 |---|---|---|
-| Federal Reserve Bank of St. Louis, FRED | A067RC1A027NBEA, A229RC0A052NBEA, B230RC0A052NBEA, PCTR, APU000074714, UNRATE, GDPC1, GFDEBTN, WALCL | Underlying data from BEA, BLS, Treasury, and the Federal Reserve — US government works, public domain |
+| Federal Reserve Bank of St. Louis, FRED | A067RC1A027NBEA, A229RC0A052NBEA, B230RC0A052NBEA, PCTR, APU000074714, UNRATE, GDPC1, GFDEBTN, WALCL, CPIAUCSL | Underlying data from BEA, BLS, Treasury, and the Federal Reserve — US government works, public domain |
 | US Energy Information Administration | Monthly Energy Review Table 9.4 | US government work, public domain |
 
 ## License compatibility

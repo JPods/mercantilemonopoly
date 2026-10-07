@@ -51,7 +51,14 @@ The aggregate (`original`) series overstates affordability by counting populatio
 
 **Test 1 — Gasoline price leads unemployment (monthly, 1977–2019).** The 12-month change in
 gasoline price correlates most strongly with the 12-month change in unemployment **18 months
-later** (r = 0.33, n = 498). This independently reproduces the 18-month lag Bill reported in 2008.
+later** (r = 0.33, n = 498). Every lag from **16 to 24 months** has r ≥ 0.30 — the response is
+spread across that window, matching Bill's 2022 chart, *"Less affordable energy correlates with
+rising unemployment in 12–24 months"* (JPods, EIA and BLS data), and the 18-month lag he reported
+in 2008. Using the inflation-adjusted gasoline price (÷ CPI) gives the same shape, strongest at
+19 months (r = 0.29).
+
+Out of sample: gasoline peaked in mid-2022. Unemployment bottomed at 3.4% in April 2023 and rose
+to 4.2% by July 2024 — about two years later, a modest rise.
 
 **Test 2 — Change in Disposable Energy leads real GDP growth (annual).** Strongest at a
 **1-year lead** for all three variants; per capita excluding transfers is strongest

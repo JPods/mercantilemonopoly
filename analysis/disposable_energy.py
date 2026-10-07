@@ -54,6 +54,7 @@ FRED = {
     "gdp_real": "GDPC1",            # Real GDP, chained $billions, quarterly
     "debt": "GFDEBTN",              # Federal debt, total public debt, $millions, quarterly
     "fed_assets": "WALCL",          # Federal Reserve total assets, $millions, weekly (2002+)
+    "cpi": "CPIAUCSL",              # Consumer Price Index, all urban, monthly
 }
 EIA_GAS = "https://www.eia.gov/totalenergy/data/browser/csv.php?tbl=T09.04"
 EVENTS = {1973: "Oil Embargo", 1979: "Iranian Revolution", 1998: "DE peak",
@@ -159,6 +160,10 @@ def main():
     m = pd.concat([gm, um], axis=1, sort=True).dropna()
     m = m[m.index.year < 2020]  # COVID unemployment spike is not an energy event
     gas_unemp, gas_unemp_best = lag_corr(m.iloc[:, 0], m.iloc[:, 1], 36)
+    real = (s["gas_monthly"] / s["cpi"]).pct_change(12) * 100  # inflation-adjusted gasoline price
+    mr = pd.concat([real, um], axis=1, sort=True).dropna()
+    mr = mr[mr.index.year < 2020]
+    gas_unemp_real, gas_unemp_real_best = lag_corr(mr.iloc[:, 0], mr.iloc[:, 1], 36)
 
     # 2. dDE -> real GDP growth, annual; 3. flywheel tau
     tests = {}
@@ -188,7 +193,10 @@ def main():
             if y in a.index and pd.notna(a.loc[y, "DE_per_capita"])},
         "test_gas_price_leads_unemployment_monthly_1977_2019": {
             "x": "gasoline price, % change over 12 months", "y": "unemployment rate, change over 12 months",
-            "best": gas_unemp_best, "by_lag_months": gas_unemp},
+            "best": gas_unemp_best, "by_lag_months": gas_unemp,
+            "lags_with_r_at_least_0.30": [d["lag"] for d in gas_unemp if d["r"] >= 0.30],
+            "real_price_variant": {"x": "gasoline price / CPI, % change over 12 months",
+                                   "best": gas_unemp_real_best, "by_lag_months": gas_unemp_real}},
         "test_DE_change_leads_real_gdp_growth": {v: {lab: pick(v, lab) for lab in tests[v]} for v in tests},
         "detail": tests,
         "caveats": [
@@ -246,7 +254,7 @@ def main():
     fig.tight_layout()
     fig.savefig(OUT / "gas_unemployment_lag.png", dpi=150)
 
-    print(f"[DE] gas->unemployment best lag {gas_unemp_best}")
+    print(f"[DE] gas->unemployment best lag {gas_unemp_best}; real price {gas_unemp_real_best}")
     for v in tests:
         print(f"[DE] {v}: " + json.dumps({lab: pick(v, lab) for lab in tests[v]}))
     print(f"[DE] wrote {OUT}")
