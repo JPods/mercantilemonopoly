@@ -153,6 +153,28 @@ and the 365-day food cycle is stored sunshine. Civilization has always lived on 
 energy. Oil is the exception: sunshine stored by geology, drawn down once, delivered through a
 chain of pools we do not control.
 
+Thomas Edison saw it in 1910:
+
+> "Sunshine is spread out thin and so is electricity. Perhaps they are the same… This scheme of
+> combustion to get power makes me sick to think of—it is so wasteful… When we learn how to store
+> electricity, we will cease being apes ourselves… Sunshine is a form of energy, and the winds and
+> the tides are manifestations of energy… Do we use them? Oh, no! We burn up wood and coal, as
+> renters burn up the front fence for fuel. We live like squatters, not as if we owned the
+> property… There must surely come a time when heat and power will be stored in unlimited
+> quantities in every community, all gathered by natural forces. Electricity ought to be as cheap
+> as oxygen…"
+>
+> — Thomas Edison, 1910 interview
+
+> "I'd put my money on the sun and solar energy. What a source of power! I hope we don't have to
+> wait 'til oil and coal run out before we tackle that."
+>
+> — Thomas Edison to Henry Ford and Harvey Firestone, 1931, as recalled by James Newton,
+> *Uncommon Friends* (1987)
+
+Edison named the problem exactly: not that sunshine is unreliable, but that we had not learned to
+**store** it — in every community.
+
 ## Limits
 
 - Correlation around 0.3 means energy prices explain roughly a tenth of the change in
