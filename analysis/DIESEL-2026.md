@@ -128,6 +128,25 @@ falling to a third by 2011. Both underestimated how adaptive the oil industry is
 — the same lesson as the 2021 rig-count projection. The inventory-pool warning held; the
 magnitude forecasts did not. That is the standard to hold this readme to.
 
+## Intermittent: the sun or oil?
+
+People call solar intermittent and oil reliable. That is driving while looking in the rear-view
+mirror: it works only while the road is straight. Syria, the oil wars, and today's supply shock
+show the road curving.
+
+| | Sun | Oil |
+|---|---|---|
+| Interruption | Every night, every winter | 1973, 1979, 1990, 2005, 2008, 2022, 2026 … |
+| Predictable? | To the second, years ahead | No — weather, politics, debt, war, capital |
+| Who controls it | Geography and the calendar | Foreign exporters, capital markets, supply chains |
+| Storage the system already runs on | Batteries and microgrids sized to the night and the season | SPR, crude and product stocks, 19–20 days just to fill the pipes |
+
+**The sun setting is a storage problem, not a reliability problem.** Oil already depends on storage
+at every link — the inventory pools in the supply chain above. The difference is that the sun's
+interruptions are known in advance and sized by the calendar, while oil's arrive without warning
+and are sized by events no city controls. The harder engineering for solar is the seasonal and
+multi-day cloudy stretch, not the night; that, like new oil supply, is a question of capital.
+
 ## Limits
 
 - Correlation around 0.3 means energy prices explain roughly a tenth of the change in
