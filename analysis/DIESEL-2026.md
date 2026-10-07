@@ -67,6 +67,21 @@ cushioned 2022 and this year. With the reserve at a 1982 low, the next supply sh
 less cushion — and the pass-through to Disposable Energy and, 16–24 months later, to jobs, is
 less dampened.
 
+**Oil is not running out; capital and lead time are the constraint.** Vast amounts of oil remain.
+Oil companies are highly adaptive in the short term — our own 2021 projection of falling US output
+was wrong because operators completed drilled wells faster and drilled more productively than
+expected. The long term is fixed by capital and geology: new supply takes **2 to 10 years** and
+large capital to develop. The risk is not geology. It is a **capital collapse** — when the capital
+and supply chains that extract, ship, refine, and deliver oil fail, oil famine follows even where
+oil is plentiful.
+
+**Syria is the case study.** Syria has oil. Its production peaked in 1996 and declined with
+depletion and underinvestment until it became a net importer of fuel. With falling oil revenue,
+the government cut diesel subsidies in 2008, roughly tripling the price of diesel during a severe
+drought; farmers who could no longer pump water or run machinery moved to the cities. Unrest
+began in 2011. War and sanctions then cut production by about 95%, and mass migration followed.
+Oil famine is a capital and supply-chain collapse, not an absence of oil.
+
 ## Limits
 
 - Correlation around 0.3 means energy prices explain roughly a tenth of the change in
