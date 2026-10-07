@@ -25,6 +25,8 @@ EIA = {
     "duc": ("eia_duc-data.xlsx", "https://www.eia.gov/petroleum/drilling/xls/duc-data.xlsx"),
 }
 START = "2007-01-01"
+# Rule of thumb (Bill James): 19-20 days of distillate supply are needed just to fill the supply chain.
+OPERATING_FLOOR_DAYS = (19, 20)
 
 
 def eia_weekly(key, refresh):
@@ -93,6 +95,12 @@ def main():
                                "lowest_5_this_week": {str(k): round(v, 1) for k, v in rank_st.head(5).items()}},
         "days_of_supply": {"value": round(dist_days.iloc[-1], 1),
                            "lowest_5_this_week_since_1991": {str(k): round(v, 1) for k, v in rank_days.head(5).items()}},
+        "usable_cushion_days_rule_of_thumb": {
+            "floor_days": list(OPERATING_FLOOR_DAYS),
+            "cushion_days": [round(dist_days.iloc[-1] - OPERATING_FLOOR_DAYS[1], 1),
+                             round(dist_days.iloc[-1] - OPERATING_FLOOR_DAYS[0], 1)],
+            "share_of_365_day_cycle_pct": [round((dist_days.iloc[-1] - f) / 365 * 100, 1)
+                                           for f in OPERATING_FLOOR_DAYS[::-1]]},
         "note": ("Reported stocks include pipeline fill and minimum operating inventory that cannot be "
                  "withdrawn; usable inventory = reported - operational floor (floor not published)."),
     }

@@ -101,9 +101,12 @@ pools to drain.
 **Reported inventory overstates usable inventory.** Distillate stocks as reported include the oil
 needed to fill pipelines, terminals, and the delivery system — inventory that cannot be withdrawn
 without the system ceasing to deliver. Usable inventory = reported inventory − that operational
-floor, and the floor is not published. So the 27.9 days reported is an accounting number; the
-cushion people can actually draw on is substantially smaller. Estimating the operational floor is
-an open question for industry and academic reviewers.
+floor, and the floor is not published. A good rule of thumb (Bill James): **19–20 days of supply
+are required just to fill the supply chain.** On that rule, the 27.9 days reported leaves a usable
+cushion of only **about 8–9 days** — roughly 2% of the 365-day food cycle that farming, food
+processing, and trucking run on diesel. In late September 2022, the previous low, the same rule
+left about 10–11 days. Measuring the operational floor precisely is an open question for industry
+and academic reviewers.
 
 **Paths to war are clear long before the wars cascade.** The same is true of oil famine: the pools
 drain, prices rise, and people compensate — all visible, all measurable — before the snap.

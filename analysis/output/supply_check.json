@@ -63,6 +63,20 @@
         "2008": 32.3
       }
     },
+    "usable_cushion_days_rule_of_thumb": {
+      "floor_days": [
+        19,
+        20
+      ],
+      "cushion_days": [
+        7.9,
+        8.9
+      ],
+      "share_of_365_day_cycle_pct": [
+        2.2,
+        2.4
+      ]
+    },
     "note": "Reported stocks include pipeline fill and minimum operating inventory that cannot be withdrawn; usable inventory = reported - operational floor (floor not published)."
   }
 }
