@@ -20,6 +20,8 @@ from disposable_energy import OUT, RAW, fetch, fred
 EIA = {
     "spr": ("eia_WCSSTUS1w.xls", "https://www.eia.gov/dnav/pet/hist_xls/WCSSTUS1w.xls"),
     "production": ("eia_WCRFPUS2w.xls", "https://www.eia.gov/dnav/pet/hist_xls/WCRFPUS2w.xls"),
+    "distillate": ("eia_WDISTUS1w.xls", "https://www.eia.gov/dnav/pet/hist_xls/WDISTUS1w.xls"),
+    "distillate_supplied": ("eia_WDIUPUS2w.xls", "https://www.eia.gov/dnav/pet/hist_xls/WDIUPUS2w.xls"),
     "duc": ("eia_duc-data.xlsx", "https://www.eia.gov/petroleum/drilling/xls/duc-data.xlsx"),
 }
 START = "2007-01-01"
@@ -59,6 +61,15 @@ def main():
     duc = eia_duc(args.refresh)
     drill = fred("IPN213111N", args.refresh)               # drilling oil & gas wells, 2017 = 100
     diesel = fred("GASDESW", args.refresh)
+    dist = eia_weekly("distillate", args.refresh) / 1e3                 # million barrels
+    dist_use = eia_weekly("distillate_supplied", args.refresh) / 1e3     # million barrels/day
+    dist_days = (dist / dist_use.rolling(4).mean()).dropna()            # reported days of supply
+
+    def same_week_rank(s):
+        """Each year's last reading in the latest week's month on/after its day; sorted low to high."""
+        last = s.index[-1]
+        w = s[(s.index.month == last.month) & (s.index.day >= last.day - 6)]
+        return w.groupby(w.index.year).last().sort_values()
 
     spr_low_before = spr[(spr <= spr.iloc[-1]) & (spr.index < "2026-01-01")]
     result = {
@@ -75,14 +86,25 @@ def main():
                                                            "value": int(duc["duc"].iloc[-1])},
                                       "note": "EIA stopped publishing the DUC series after April 2024"},
     }
+    rank_st, rank_days = same_week_rank(dist), same_week_rank(dist_days)
+    result["distillate_reported"] = {
+        "stocks_million_bbl": {"date": str(dist.index[-1].date()), "value": round(dist.iloc[-1], 1),
+                               "lowest_for_this_week_since": int(dist.index[0].year) if rank_st.index[0] == dist.index[-1].year else None,
+                               "lowest_5_this_week": {str(k): round(v, 1) for k, v in rank_st.head(5).items()}},
+        "days_of_supply": {"value": round(dist_days.iloc[-1], 1),
+                           "lowest_5_this_week_since_1991": {str(k): round(v, 1) for k, v in rank_days.head(5).items()}},
+        "note": ("Reported stocks include pipeline fill and minimum operating inventory that cannot be "
+                 "withdrawn; usable inventory = reported - operational floor (floor not published)."),
+    }
     (OUT / "supply_check.json").write_text(json.dumps(result, indent=2))
 
-    fig, axes = plt.subplots(4, 1, figsize=(11, 11), sharex=True)
+    fig, axes = plt.subplots(5, 1, figsize=(11, 13), sharex=True)
     panels = [
         (prod[START:], "#1e293b", "US crude production\nmillion bbl/day"),
         (drill[START:], "#b45309", "Drilling activity\n(index, 2017 = 100)"),
         (duc["duc"], "#7c3aed", "Drilled uncompleted\nwells (DUCs)"),
         (spr[START:], "#15803d", "Strategic Petroleum\nReserve, million bbl"),
+        (dist_days[START:], "#0f766e", "Distillate stocks,\ndays of supply (reported)"),
     ]
     for ax, (series, color, label) in zip(axes, panels):
         ax.plot(series.index, series.values, color=color, lw=2)
@@ -93,7 +115,7 @@ def main():
     d2.plot(diesel[START:].index, diesel[START:].values, color="#9b1c1c", lw=1, alpha=0.7)
     d2.set_ylabel("diesel $/gal", color="#9b1c1c", fontsize=9)
     axes[2].text(duc.index[-1], duc["duc"].iloc[-1], "  EIA series ends Apr 2024", fontsize=8, va="center")
-    axes[0].set_title("Future oil supply: production at record, drilling flat, DUCs drawn down, SPR at a 1982 low")
+    axes[0].set_title("Future oil supply: production at record, drilling flat, DUCs drawn down, SPR at a 1982 low, diesel stocks thin")
     fig.tight_layout()
     fig.savefig(OUT / "oil_supply.png", dpi=150)
     print(json.dumps(result, indent=2))

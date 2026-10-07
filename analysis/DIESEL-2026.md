@@ -55,6 +55,7 @@ adds to the debt drag instead, is the open question.
 | Drilling activity (Aug 2026, 2017 = 100) | **105** — about half the 2014 peak (189), below 2019 (138) | FRED `IPN213111N` |
 | Drilled-uncompleted wells (DUCs) | **8,894** peak (Jun 2020) → **4,510** (Apr 2024, last published) | EIA DUC data |
 | Strategic Petroleum Reserve (Sep 25, 2026) | **284 million bbl** — lowest since October 1982; down 130 million in 2026; 727 million at its 2010 peak | EIA weekly |
+| Distillate (diesel) stocks, reported (Sep 25, 2026) | **105 million bbl, 27.9 days of supply — the lowest for late September in the records** (stocks since 1982, days since 1991); 2022 was next at 111 million and 29.9 days | EIA weekly |
 
 **Rig count leads oil output by years.** Production can stay at a record for a while on wells
 already drilled. From 2020 to 2024, DUC drawdown let output climb while drilling ran at half its
@@ -96,6 +97,16 @@ half since 2020. The **SPR** is the national storage pool, at a 1982 low. **Dies
 prices is the trucking and pumping links straining. Each is measurable before the snap. A
 solar-powered network gathers and uses its energy where it is delivered, with no long chain of
 pools to drain.
+
+**Reported inventory overstates usable inventory.** Distillate stocks as reported include the oil
+needed to fill pipelines, terminals, and the delivery system — inventory that cannot be withdrawn
+without the system ceasing to deliver. Usable inventory = reported inventory − that operational
+floor, and the floor is not published. So the 27.9 days reported is an accounting number; the
+cushion people can actually draw on is substantially smaller. Estimating the operational floor is
+an open question for industry and academic reviewers.
+
+**Paths to war are clear long before the wars cascade.** The same is true of oil famine: the pools
+drain, prices rise, and people compensate — all visible, all measurable — before the snap.
 
 ## Limits
 

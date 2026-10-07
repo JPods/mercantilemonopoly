@@ -14,7 +14,7 @@
 | Source | Series | Terms |
 |---|---|---|
 | Federal Reserve Bank of St. Louis, FRED | A067RC1A027NBEA, A229RC0A052NBEA, B230RC0A052NBEA, PCTR, APU000074714, UNRATE, GDPC1, GFDEBTN, WALCL, CPIAUCSL, GASDESW, GASREGW, A229RC0, IPN213111N | Underlying data from BEA, BLS, Treasury, and the Federal Reserve — US government works, public domain |
-| US Energy Information Administration | Monthly Energy Review Table 9.4; weekly SPR stocks (WCSSTUS1) and crude production (WCRFPUS2); DUC data (Drilling Productivity Report) | US government work, public domain |
+| US Energy Information Administration | Monthly Energy Review Table 9.4; weekly SPR stocks (WCSSTUS1), crude production (WCRFPUS2), distillate stocks (WDISTUS1) and distillate product supplied (WDIUPUS2); DUC data (Drilling Productivity Report) | US government work, public domain |
 
 ## License compatibility
 

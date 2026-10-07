@@ -39,5 +39,30 @@
       "value": 4510
     },
     "note": "EIA stopped publishing the DUC series after April 2024"
+  },
+  "distillate_reported": {
+    "stocks_million_bbl": {
+      "date": "2026-09-25",
+      "value": 105.2,
+      "lowest_for_this_week_since": 1982,
+      "lowest_5_this_week": {
+        "2026": 105.2,
+        "2022": 110.9,
+        "1996": 111.0,
+        "2000": 114.2,
+        "1985": 115.2
+      }
+    },
+    "days_of_supply": {
+      "value": 27.9,
+      "lowest_5_this_week_since_1991": {
+        "2026": 27.9,
+        "2022": 29.9,
+        "2000": 29.9,
+        "2023": 30.6,
+        "2008": 32.3
+      }
+    },
+    "note": "Reported stocks include pipeline fill and minimum operating inventory that cannot be withdrawn; usable inventory = reported - operational floor (floor not published)."
   }
 }
