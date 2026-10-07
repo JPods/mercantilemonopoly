@@ -111,6 +111,23 @@ and academic reviewers.
 **Paths to war are clear long before the wars cascade.** The same is true of oil famine: the pools
 drain, prices rise, and people compensate — all visible, all measurable — before the snap.
 
+## Precedent: "Gas Lines Coming This Fall" (July 2008)
+
+On July 15, 2008, Bill James published *Gas Lines Coming This Fall* (Seeking Alpha). The argument
+was this readme's argument: oil moves through a long and fragile supply chain; inventory pools at
+each link absorb shocks; US crude inventories were down to about 19 days of supply and falling;
+and with the pools thin, a single weather, political, or debt event could cause shortages. It
+named the Gulf of Mexico hurricane season as the specific risk — *"We have allowed our entire
+economy to be at risk from a single weather event."*
+
+In September 2008, Hurricanes Gustav and Ike shut Gulf Coast refineries, and gas lines and empty
+stations spread across the Southeast. The mechanism and the timing were right.
+
+Scored honestly, two calls were too large: shortage prices of $6–8 a gallon, and world oil exports
+falling to a third by 2011. Both underestimated how adaptive the oil industry is in the short term
+— the same lesson as the 2021 rig-count projection. The inventory-pool warning held; the
+magnitude forecasts did not. That is the standard to hold this readme to.
+
 ## Limits
 
 - Correlation around 0.3 means energy prices explain roughly a tenth of the change in
