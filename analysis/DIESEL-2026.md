@@ -45,6 +45,28 @@ rose from 3.4% (April 2023) to 4.2% (July 2024). That rise was modest, likely cu
 COVID-era money printing still in the economy. Whether money printing cushions this shock, or
 adds to the debt drag instead, is the open question.
 
+## Future supply: drilling, DUCs, and the SPR
+
+![Production, drilling, DUCs, SPR](output/oil_supply.png)
+
+| | Value | Source |
+|---|---|---|
+| US crude production (Sep 25, 2026) | **13.96 million bbl/day — a record** | EIA weekly |
+| Drilling activity (Aug 2026, 2017 = 100) | **105** — about half the 2014 peak (189), below 2019 (138) | FRED `IPN213111N` |
+| Drilled-uncompleted wells (DUCs) | **8,894** peak (Jun 2020) → **4,510** (Apr 2024, last published) | EIA DUC data |
+| Strategic Petroleum Reserve (Sep 25, 2026) | **284 million bbl** — lowest since October 1982; down 130 million in 2026; 727 million at its 2010 peak | EIA weekly |
+
+**Rig count leads oil output by years.** Production can stay at a record for a while on wells
+already drilled. From 2020 to 2024, DUC drawdown let output climb while drilling ran at half its
+2014 level. That cushion is largely spent: by April 2024 DUCs were back near their 2014 level, and
+EIA stopped publishing the series. Drilling has barely responded to record prices (99 → 105 this
+year). New supply depends on new drilling, which shows up a year or more later.
+
+**The buffer is thin.** The SPR holds about two weeks of US petroleum consumption. Drawing it down
+cushioned 2022 and this year. With the reserve at a 1982 low, the next supply shock arrives with
+less cushion — and the pass-through to Disposable Energy and, 16–24 months later, to jobs, is
+less dampened.
+
 ## Limits
 
 - Correlation around 0.3 means energy prices explain roughly a tenth of the change in
@@ -67,4 +89,5 @@ how a city stops importing these shocks.
 ```bash
 python3 disposable_energy.py   # builds the 1986 base and lag tests
 python3 diesel_check.py        # current diesel, Disposable Energy, diesel lag test -> output/diesel_check.json
+python3 supply_check.py        # production, drilling, DUCs, SPR -> output/supply_check.json, oil_supply.png
 ```
