@@ -82,6 +82,21 @@ drought; farmers who could no longer pump water or run machinery moved to the ci
 began in 2011. War and sanctions then cut production by about 95%, and mass migration followed.
 Oil famine is a capital and supply-chain collapse, not an absence of oil.
 
+![Oil's long and fragile supply chain and required inventory pools](images/oil-supply-chain.jpg)
+
+**The crisis is at hand long before the snap.** Oil reaches people through a long chain —
+extracting, shipping, refining, transporting, storing, trucking, pumping — and every link needs an
+inventory pool to absorb shocks from debt, weather, politics, and available exports. Syria shows
+the sequence: the pools drain first, prices rise, and people compensate by scrambling to keep the
+upside-down pyramid in balance. That scramble is sand in the bearings of the flywheel. The economy
+looks intact until people can no longer compensate — then it snaps.
+
+The US pools are draining now. **DUCs** are the inventory between drilling and extraction, down by
+half since 2020. The **SPR** is the national storage pool, at a 1982 low. **Diesel** at record
+prices is the trucking and pumping links straining. Each is measurable before the snap. A
+solar-powered network gathers and uses its energy where it is delivered, with no long chain of
+pools to drain.
+
 ## Limits
 
 - Correlation around 0.3 means energy prices explain roughly a tenth of the change in
