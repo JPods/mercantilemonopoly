@@ -164,7 +164,8 @@ Thomas Edison saw it in 1910:
 > quantities in every community, all gathered by natural forces. Electricity ought to be as cheap
 > as oxygen…"
 >
-> — Thomas Edison, 1910 interview
+> — Thomas Edison, 1910, quoted in Elbert Hubbard, *Little Journeys to the Homes of the Great*,
+> p. 339 (copyright 1928)
 
 > "I'd put my money on the sun and solar energy. What a source of power! I hope we don't have to
 > wait 'til oil and coal run out before we tackle that."
