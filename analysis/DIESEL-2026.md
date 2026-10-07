@@ -147,6 +147,12 @@ interruptions are known in advance and sized by the calendar, while oil's arrive
 and are sized by events no city controls. The harder engineering for solar is the seasonal and
 multi-day cloudy stretch, not the night; that, like new oil supply, is a question of capital.
 
+**Life solved this long ago.** Trees do not die overnight or in winter; they store the sun's energy
+and draw on it. We grow crops to feed ourselves over winter — the harvest is a seasonal battery,
+and the 365-day food cycle is stored sunshine. Civilization has always lived on stored solar
+energy. Oil is the exception: sunshine stored by geology, drawn down once, delivered through a
+chain of pools we do not control.
+
 ## Limits
 
 - Correlation around 0.3 means energy prices explain roughly a tenth of the change in
