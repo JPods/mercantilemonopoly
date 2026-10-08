@@ -86,3 +86,9 @@ figure figcaption { font-size: 0.85em; color: #78716c; margin-top: 8px; }
 sup a { text-decoration: none; }
 ol.notes { font-size: 0.85em; color: #57534e; max-width: 740px; margin: 16px 0 0 20px; }
 ol.notes li { margin-bottom: 6px; }
+
+/* ── Veto list ── */
+details.veto-list { margin: 24px 0 0; }
+details.veto-list summary { cursor: pointer; font-weight: 600; color: #9b1c1c; }
+details.veto-list .src { font-size: 0.82em; color: #78716c; }
+@media (max-width: 600px) { .states td:first-child { white-space: normal; } }
