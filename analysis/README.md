@@ -10,7 +10,7 @@ not finished science.** Both the concept of Disposable Energy and the correlatio
 imports and oil wars with national debt need review. We invite economists, energy
 researchers, and students to check the method, break it, and improve it.
 
-Contact: Bill James, bill@jpods.com
+Contact: Bill James, bill.james@jpods.com
 
 **Current:** [Record Diesel, Disposable Energy, and Unemployment — October 2026](DIESEL-2026.md)
 

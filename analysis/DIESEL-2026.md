@@ -183,7 +183,7 @@ Edison named the problem exactly: not that sunshine is unreliable, but that we h
 - These are national averages. The economy is a confederation of upside-down pyramids: freight-
   and farm-dependent regions feel diesel first and hardest.
 - The concept of Disposable Energy is open for review. Academic contributions welcome:
-  bill@jpods.com.
+  bill.james@jpods.com.
 
 ## The structural point
 
