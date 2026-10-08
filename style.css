@@ -92,3 +92,4 @@ details.veto-list { margin: 24px 0 0; }
 details.veto-list summary { cursor: pointer; font-weight: 600; color: #9b1c1c; }
 details.veto-list .src { font-size: 0.82em; color: #78716c; }
 @media (max-width: 600px) { .states td:first-child { white-space: normal; } }
+section p.src { font-size: 0.82em; color: #78716c; }
